@@ -42,7 +42,10 @@ const Memotest = () => {
                 {selected.includes(image) || guessed.includes(image) ? (
                   <img src={url} />
                 ) : (
-                  <img src="https://icongr.am/simple/ipfs.svg?size=92&color=currentColor&colored=true" />
+                  <img
+                    className="back-card"
+                    src="https://icongr.am/octicons/question.svg?size=92&color=009da8"
+                  />
                 )}
               </li>
             );

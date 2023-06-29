@@ -35,6 +35,14 @@ body {
   min-height: 100vh;
 }
 
+.home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 main {
   padding: 1rem;
 }
@@ -56,6 +64,30 @@ li {
   gap: 24px;
 }
 
+.back-card:hover {
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

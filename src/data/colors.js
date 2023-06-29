@@ -10,7 +10,7 @@ export const COLORS = [
         correct: false
     },
     {
-        name: "verde",
+        name: "Verde",
         color: "#01a009",
         correct: false
     },
